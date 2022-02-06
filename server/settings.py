@@ -40,8 +40,7 @@ INSTALLED_APPS = [
     'corsheaders'
 ]
 
-MIDDLEWARE = [ 
-
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -129,4 +128,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_WHITELIST = [
     'https://localhost:3000'
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost",
+    "http://localhost:80",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000"
 ]
